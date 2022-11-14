@@ -33,7 +33,7 @@ def compare_frameMD5_files(*argv):
                 writer.writerow([a.strip()[47:], b.strip()[47:], 'PASS'])
 
 
-# Main function: Creates F-MD5 of source file, transcodes to FFV1, generates F-MD5 of new FFV1, then compares and saves result
+# Main function: Creates frameMD5 of source file, transcodes to FFV1, generates frameMD5 of new FFV1, then compares and saves result
 def main():
     os.chdir(source_dir)
     for file in os.listdir(os.getcwd()):
