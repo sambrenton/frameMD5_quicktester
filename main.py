@@ -1,4 +1,4 @@
-import os, csv, sys
+import os, csv
 
 # Function to generate frameMD5 from input file
 def gen_framemd5(file):
@@ -31,7 +31,6 @@ def compare_frameMD5_files(*argv):
                 print(a.strip()[47:], b.strip()[47:])
             else:
                 writer.writerow([a.strip()[47:], b.strip()[47:], 'PASS'])
-
 
 
 # Main function: Creates F-MD5 of source file, transcodes to FFV1, generates F-MD5 of new FFV1, then compares and saves result
